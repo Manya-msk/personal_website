@@ -1,0 +1,98 @@
+/* Page layout */
+.research-page {
+  position: relative;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 45px; /* Adjust for navbar spacing */
+  overflow: hidden;
+}
+
+/* Title */
+.research-title {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid layout for cards */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 0.1rem;
+  row-gap: 2rem;
+  width: 80%;
+  max-width: 2000px;
+  justify-items: center;
+}
+
+/* Card container */
+.research-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7f7;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 0 transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title pill */
+.research-header {
+  background-color: #f4f7f7;
+  border-radius: 9999px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 1rem auto 0.5rem auto;
+  width: 80%;
+}
+
+/* Body text */
+.research-body {
+  background-color: #f4f7f7;
+  border-radius: 1.2rem;
+  padding: 0.25rem 1.5rem;
+  text-align: left;
+  color: #111;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  min-height: 120px;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.blob-blue {
+  bottom: -60px;
+  left: 650px;
+  width: 300px;
+  height: 300px;
+  background-color: #cfe1ff;
+  border-radius: 60% 40% 70% 50%;
+}
+
+.blob-purple {
+  bottom: -40px;
+  left: 700px;
+  width: 300px;
+  height: 300px;
+  background-color: #e8d5ee;
+  border-radius: 50% 70% 50% 70%;
+}
