@@ -32,7 +32,7 @@ export default function HomePage() {
         {/* Profile photo */}
         <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-md">
           <Image
-            src="/headshot.jpg"
+            "headshot.JPG"
             alt="Manya Sinhval"
             fill
             className="object-cover"
